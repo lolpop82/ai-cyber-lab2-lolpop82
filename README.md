@@ -81,6 +81,24 @@ ai-cyber-lab2/
 
 *Exact results are saved in `results/metrics.json` after running the evaluation pipeline.*
 
+## Model Comparison (Bonus)
+
+Three classifiers were compared on the same train/test split:
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|---|---|---|---|---|
+| Logistic Regression | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| Random Forest | 0.9925 | 0.9900 | 0.9950 | 0.9925 |
+| SVM (RBF) | 0.9900 | 0.9949 | 0.9850 | 0.9899 |
+
+Run the comparison:
+
+```bash
+python -m src.compare
+```
+
+Results are saved to `results/model_comparison.json` and `results/model_comparison.png`.
+
 ## Ethics and Safety Considerations
 
 - **Intended use**: This project is strictly for educational purposes as part of a cybersecurity course. It demonstrates how ML can be applied to detect phishing URLs.
